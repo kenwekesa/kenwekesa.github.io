@@ -1,0 +1,766 @@
+html,body
+{
+	min-height: 100%;
+	position:relative;
+	width: 100%;
+	margin: 0;
+}
+.mainbody
+{
+	width: 100%;
+	display: block;
+	flex-direction:column;
+    position: relative;
+	overflow: hidden;
+	
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		 box-sizing: border-box;
+	
+}
+
+.header_part
+{
+   margin-bottom:0 !important;
+   position: fixed;
+}
+.navbar
+{
+
+	height:50px;
+	position: fixed;
+	width: 100%;
+	margin-bottom: 1px;
+
+	z-index: 100;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+    fill: white;
+}
+
+.overlay
+{
+	position: absolute;
+	 top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	 background-color:rgb(18, 6, 85);
+	 opacity: 74%;
+}
+
+.intro_content
+{
+	color: white;
+	margin-top: 133px;
+	text-align: center;
+	font-size: 500%;
+}
+.nav_part
+{
+
+	height: 580px;
+	width:100%;
+	margin-top: 1px !important;
+	background: url(images/comp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:relative;
+}
+
+/*.nav_part:after 
+{
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 0;	  
+
+}*/
+
+.content2
+{
+	
+	position: relative;
+	margin-top:-70px;
+	margin-right: 30px;
+}
+
+
+/*CONTENT 3*/
+.content4
+{
+	clear: both;
+	background-color: white;
+	margin:10px;
+	margin-top: 3px !important;
+	padding: 20px;
+}
+.content4 img
+{
+	float: right; 
+	margin: 8px;
+}
+.content4 h2
+{
+	color: maroon;
+}
+
+/*CONTENT 5*/
+.content5
+{
+	background-color: rgb(175, 159, 162);
+	margin: auto;
+	width: 70%;
+	margin-bottom: 12px !important;
+	padding-bottom: 8px;
+	
+}
+
+.content5_upperdiv
+{
+   
+   height: 160px;
+   margin: 5px;
+   background-image: url("images/divback2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+   color: white;
+   padding: 12px;
+   
+   
+}
+
+.content5_upperdiv h1
+{
+   font-size: 350%;
+   margin-top: 19px;
+}
+.content5_lowerdiv
+{
+   width: 61%;
+   margin: auto;
+   margin-top:-50px !important;
+   padding: 10px;
+   overflow: auto;
+   
+
+}
+.content5_lowerdiv div
+{
+	width: 40%;
+	background-color: white;
+	float: left;
+	margin: 2%;
+	border-radius: 5px;
+	padding: 20px;
+	
+}
+.content5_lowerdiv h2
+{
+	color:rgb(233, 74, 12);
+}
+
+
+
+
+/*CONTENT 6*/
+.content6
+{   
+	clear: both;
+	background-color: brown;
+	margin-top: 30px;
+	margin-bottom: 3px;
+	position: relative;
+	height: 460px;
+	width: 100%;
+	text-align: center !important;
+	display: flex;
+	padding-top: 12px;
+	
+
+}
+.content6 div
+{
+	height: 300px;
+
+}
+
+
+.card {
+	display: inline-block;
+	height: 400px;
+	width: 300px;
+	overflow: hidden;
+	background-color: #17141d;
+	border-radius: 10px;
+	box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+	transition: 0.4s ease-out;
+	position: relative;
+	left: 0px;
+
+  }
+  .card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+	transform: translateY(-20px);
+	transition: 0.4s ease-out;
+  }
+
+  .card:hover ~ .card {
+	position: relative;
+	left: 50px;
+	transition: 0.4s ease-out;
+  }
+
+	.card_bottom
+	{
+		display: block;
+		background: rgb(129, 39, 39);
+		position: relative;
+		height: 200px;
+		right: 0;
+
+	}
+  
+
+  .title {
+	color: white;
+	font-weight: 300;
+	position: relative;
+	
+	
+  }
+
+
+.card_top {
+	
+	background:rgb(49, 64, 194);
+	width: 100%;
+	top: 0;
+	right: 0;
+	height: 50px;
+	position: absolute;
+	display: block;
+  }
+
+  
+
+  
+
+.card_container
+{
+	position: absolute;
+	height: 300px;
+	width: 600px;
+	top: 60px;
+	left: calc(50% - 300px);
+	display: flex;
+}
+
+.backleftdiv
+{
+   
+	width: 30%;
+   
+   top: 0;
+   background: greenyellow;
+   z-index: 20;
+   position: absolute;
+   margin-top: 30px;
+   display: inline-block;
+
+}
+.frontdiv
+{
+	width: 30%;
+	background: blue;
+	margin-bottom: 2%;
+	z-index: 45;
+	top: 0;
+	position: absolute;
+	display: inline-block;
+
+
+	
+
+}
+.backrightdiv
+{
+	width: 30%;
+	
+	top: 0;
+	background: mediumturquoise;
+	z-index: 19;
+	position: absolute;
+	margin-top: 30px;
+	display: inline-block;
+
+
+
+	
+}
+.navigation
+{
+	background-color:#5db5e0;
+	width:100%;
+	height:50px;
+	list-style: none;
+	align-content: center;
+	align-self: center;
+	margin: 0 !important;
+	padding-right: 80px;
+	position: fixed;
+	
+
+	transition-duration: 1s;
+	
+
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		 box-sizing: border-box;
+}
+
+.nav_transparent
+{
+	background-color:white;
+	width:100%;
+	height:80px;
+	list-style: none;
+	align-content: center;
+	align-self: center;
+	margin: 0 !important;
+	padding-right: 80px;
+	position: fixed;
+	top: 0;
+	transition-duration: 1s;
+	
+
+	box-shadow: 0 3px 2rem rgba(0,0,0,0.2);
+	
+
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		 box-sizing: border-box;
+}
+.navbar .navigation li
+{
+	  float: left;
+	  padding: 15px;
+	  color: #aaffff;
+	  font-size: 120%;
+	  
+}
+
+.nav_transparent li
+{
+	float: left;
+	  padding: 15px;
+	  color: #040505;
+	  font-size: 100%;
+	  margin-top: 4px;
+}
+.navbar .navigation .right
+{
+	  float: right;
+	  padding: 15px;
+	  color: #aaffff;
+	  
+}
+
+.nav_transparent .right
+{
+	  float: right;
+	  padding: 15px;
+	  color: #0b0c0c;
+	  
+}
+.navbar .navigation li:hover
+{
+	background-color: #420942;
+	color: white;
+	transition-duration: 1s;
+}
+
+.nav_transparent li:hover
+{
+	border-bottom: #420942 solid 5px;
+	color: #420942;
+	transition-duration: 1s;
+}
+
+
+	
+
+
+
+.coll
+{
+	 flex: 0 1 22%;
+	 border-radius:10px;
+	 text-align: center;
+	 background: white;
+	 height: 500px;
+	 margin-left: 2px;
+	 box-shadow: 6px 8px 16px 8px rgba(0,0,0,0.2);
+
+
+
+	
+	 
+}
+
+
+.coll:hover
+{
+	 flex: 0 2 26%;
+	 border-radius:10px;
+	 text-align: center;
+	 background: white;
+	 height: 550px;
+	 margin-left: 2px;
+	 box-shadow: 16px 18px 19px 18px rgba(0,0,0,0.2);
+	 
+	 -moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+	 
+}
+
+.card2header
+{
+	width:100%;
+	height:30px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	text-align: center;
+	
+	
+}
+
+.row2
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		 box-sizing: border-box;
+	
+
+}
+
+.card2header
+{
+	width:100%;
+	height:30px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	text-align: center;
+	
+	
+}
+.card3header
+{
+	width:100%;
+	height:30px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	text-align: center;
+	
+	
+}
+
+.card2header1
+{
+	width:100%;
+	height:100px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	text-align: center;
+	background: url('computeruse.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	
+}
+.card2header2
+{
+	width:100%;
+	height:100px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	text-align: center;
+	background: url('programming.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	
+}
+.card2header3
+{
+	width:100%;
+	height:100px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	text-align: center;
+	background: url('design.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	
+}
+.card2header4
+{
+	width:100%;
+	height:100px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	text-align: center;
+	background: url('writing.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	
+}
+
+.card2header span
+{
+	position: absolute;
+	bottom: 0;
+	
+}
+
+
+.button {
+	border: 0;
+	outline: none;
+	border-radius: 0;
+	padding: 10px 0;
+	width: 70%;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background: #00557f;
+	color: #ffffff;
+	cursor: pointer;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.button:hover, .button:focus { background: #aa55ff; 
+
+}
+
+
+.content3
+{
+	
+	margin: 40px;
+	
+	width: 98%;
+	position: relative;
+	background-color: mediumpurple;
+
+}
+section
+{
+   width: 40%; float: left;
+   margin: 1%;
+   background-color: rgb(182, 200, 206);
+   padding: 50px;
+   
+   
+}
+
+.top_sect_image
+{
+	
+	width: 100%;
+	
+}
+
+.top_sect_image img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	border: 5px solid white;
+
+}
+.contentt4
+{
+	background-color: maroon;
+	margin-top: 34px;
+	height: 23px;
+}
+
+
+
+
+
+/*SIGN UP PAGE STYLES*/
+
+.main
+{
+	
+	
+	width: 100%;
+	height: 100%;
+
+}
+
+.form_card
+{
+	background-color: white;
+	margin: 0 auto;
+	width: 50%;
+	height: 60%;
+	padding: 40px
+	
+}
+
+
+.bodypart
+{
+    
+    height: 200px;
+    overflow: auto;
+    background: white;
+    padding-left: 200px;
+     padding-right: 200px;
+}
+
+.signup_body
+{
+	background-color: skyblue;
+}
+
+.form_card h1
+{
+	text-align: center;
+	color: blueviolet;
+}
+
+.form_card hr{
+	background-color: rgb(237, 17, 245);
+	height: 2px;
+}
+.ok_button 
+{
+	background-color: rgb(101, 51, 148); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.cancel_button
+{
+	background-color: rgb(233, 74, 12); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.form_footer
+{
+	width: 100%;
+	margin-bottom: 0;
+	background-color: darkmagenta;
+	color: white;
+	height: 20px;
+	text-align: center;
+	margin-top: 120px;
+}
+
+.cancel_button:hover
+{
+	background-color: crimson;
+}
+
+.ok_button:hover
+{
+	background-color: cornflowerblue;
+}
+div
+{
+	display: block;
+}
+.footer 
+{
+	clear: both;
+	width: 100%;
+	height: 220px;
+	display: block;
+	position: relative;
+	background-color: rgb(26, 8, 29);
+	bottom: 0;
+	padding: 30px;
+	
+}
+
+.upper_footer
+{
+	border-bottom:2px solid white;
+	width: 95%;
+	height: 20px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.lower_footer
+{
+	color: white;
+	text-align: center;
+}
+.lower_footer span
+{
+	font-size: 250%;
+	color:rgb(161, 235, 64);
+}
+.footer_column
+{
+	width: 23%;
+	float:left;
+	margin:1%;
+}
+input[type=text], select, input[type=password],input[type=email]
+{
+	padding: 12px 20px;
+	width: 300px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,48 @@
+
+
+body
+{
+	background:#eee6e2;
+}
+
+
+@media screen and (min-width: 40em) {
+    .cards {
+    
+           display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   }
+ 
+    .card {
+    flex: 0 1 calc(50% - 1em);
+    background: white;
+    height: 235px;
+    margin-bottom: 10px;
+    }
+}
+ 
+@media screen and (min-width: 60em) {
+
+ .cards {
+    
+           display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   }
+ 
+    .card {
+    flex: 0 1 calc(25% - 1em);
+    background: white;
+    height: 235px;
+    margin-bottom: 10px;
+    }
+  
+}
+ 
+ 
+@media screen and (min-width: 52em) {
+    .centered {
+        
+    }
+}

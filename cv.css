@@ -1,0 +1,67 @@
+
+ul.nav {
+    margin:0;
+    top: 0;
+    padding:0;
+    list-style:none;
+    height:50px; line-height:px;
+    background:#ffffff; /* you can change the backgorund color here. */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    border-bottom: ;
+}
+
+
+ul.nav li {
+ /* you can change the border color matching to your background color */
+    float:left;
+    height:50px;
+    color:#ffffff;
+}
+ul.nav li:hover {
+    background:  ##302726 ;
+    color: #ffffff !important;
+}
+ul.nav a {
+    display:block;
+    padding:0 28px;
+    padding-top: 18px;
+    text-decoration:none;
+}
+
+ul.nav li.current a {
+    background: #60e0f7;
+}
+.footercv
+{
+    height: 60px;
+    width: 100%;
+    background-color: #757d7a;
+    color: #ffffff;
+    text-align: center;
+    bottom: 0;
+    padding-top: 8px;
+}
+
+.footercv h4 { margin-top: 5px;}
+.resumebody
+{
+	background: url('foll2.jpg') no-repeat;
+	background-size: cover;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 43px;
+	font-size: 17px;
+	width: 100%;
+	padding-top: 15px;
+	align-content: space-between !important;
+}
+.resume
+{
+	background: white;
+	width: 90%;
+	opacity: 70%;
+	margin: 4px 15px;
+	padding-left: 70px;
+	padding-top: 22px;
+}
