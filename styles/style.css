@@ -20,9 +20,16 @@
     align-items: center;
     justify-content: space-around;
     color: white;
-   
+    transition: background-color 200ms linear;
 }
-.navlinks
+.header.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    position: fixed;
+    top: 0;
+    color: rgb(4, 55, 80);
+  }
+.header .navlinks
 {
     list-style: none;
      text-decoration: none;
@@ -33,9 +40,22 @@
      font-weight: bold;
      color: white;
 }
-.navlinks a{
+.header .navlinks a{
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
+}
+
+.navlinks a:hover{
+    text-decoration: none;
+    color: rgb(123, 149, 8);
+    border-bottom: 2px solid orangered;
+    transition: background-color 200ms linear;
+   
+}
+.header.scrolled .navlinks a{
+    text-decoration: none;
+    color: rgb(27, 14, 122);
     text-transform: uppercase;
 }
 
@@ -335,3 +355,51 @@
 	
 	
 }
+.header .icon
+{
+    display: none;
+}
+
+/*=============================================MEDIA QUERYS RESPONSIVENES===========================*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header .identity, .social
+    {
+        display: none;
+    }
+    .header
+    {
+        height: fit-content;
+        background-color: #fff;
+        min-height: 50px;
+    }
+    .header .navlinks
+{
+    list-style: none;
+     text-decoration: none;
+     text-decoration-style: none;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     font-weight: bold;
+     
+     
+}
+.header .navlinks a
+{
+    color: rgb(17, 17, 94);
+    position: relative;
+}
+.header .icon
+{
+    color:blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 7px;
+    margin-right: 7px;
+    display: block;
+    cursor: pointer;
+}
+  }
