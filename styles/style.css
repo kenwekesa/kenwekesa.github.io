@@ -65,6 +65,12 @@
     border-bottom: 2px solid orangered;
    
 }
+
+.header .identity, .social
+        {
+            display: flex;
+            gap: 8px;
+        }
 .mainbody
 {
    
@@ -228,6 +234,7 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .project .links .more 
 {
@@ -256,6 +263,7 @@
 {
     display: flex;
     gap: 3px;
+    flex-wrap: wrap;
 }
 
 .row2 {
@@ -365,62 +373,77 @@
 /*=============================================MEDIA QUERYS RESPONSIVENES===========================*/
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .header .identity, .social
+        /* For mobile phones: */
+        .header .identity, .social
+        {
+            display: none;
+        }
+        .header
+        {
+            height: fit-content;
+            background-color: #fff;
+            min-height: 50px;
+        }
+        .header .navlinks
     {
+        list-style: none;
+        text-decoration: none;
+        text-decoration-style: none;
         display: none;
+        flex-direction: column;
+        gap: 20px;
+        font-weight: bold;
+        
+        
     }
-    .header
+    .header .navlinks a
     {
-        height: fit-content;
-        background-color: #fff;
-        min-height: 50px;
+        color: rgb(17, 17, 94);
+        position: relative;
+        
     }
-    .header .navlinks
-{
-    list-style: none;
-     text-decoration: none;
-     text-decoration-style: none;
-     display: none;
-     flex-direction: column;
-     gap: 20px;
-     font-weight: bold;
-     
-     
-}
-.header .navlinks a
-{
-    color: rgb(17, 17, 94);
-    position: relative;
+    .header .icon
+    {
+        color:blue;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        font-weight: lighter;
+    }
+
+    .navlinks.active
+    {
+        display: flex;
+        transition: all 20s ease;
     
-}
-.header .icon
-{
-    color:blue;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
-    margin-right: 10px;
-    display: block;
-    cursor: pointer;
-    font-size: 28px;
-    font-weight: lighter;
-}
+    }
 
-.navlinks.active
-{
-    display: flex;
-    transition: all 20s ease;
-   
-}
+    .about{
+        flex-direction: column;
+    }
+    .row2
+    {
+        flex-direction: column;
+    }
 
-.about{
-    flex-direction: column;
-}
-.row2
+    .projects_list
+    {
+        flex-direction: column;
+    }
+    .projects_list .project
+    {
+        width: 100%;
+    }
+
+    .footer .footer_top
 {
     flex-direction: column;
+    align-items: center;
 }
 
-  }
+}
